@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto APOD|Nasa</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <div class="cabecalho">
             <div class="nasa-logo">
-                <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg">
+                <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" width="95px" height="95px">
             </div>
             <div class="link">
                 <a href="./index.html">Home</a>
@@ -20,27 +20,27 @@
             </div>
         </div>
     </header>
-    <div id="buscarImg">
-        <div >
-            <p>Selecione a data que deseja  </p>
-            <input type="date"id=calendario>
-        </div>
-        <div>
+
+        <p class="paragrafo">Selecione a data que deseja ver a imagem:</p>
+        
+    <div class=busca>
+            
+        <input type="date"id=calendario>
+        <button>Buscar</button>
+    </div>
+        
+        
+        
+    <div id="areaImg">
+
+        <div class="conteudo">
             <h1 id="titulo"></h1>
             <p id="texto"></p>
-            <img src="" alt="" id="foto">
-            
+            <img src="" alt="" id="foto">   
         </div>
 
-        
-            <button>Buscar</button>
-        
     </div>
-    
-   
-   
-
-    
+              
     <footer>
         <p class="fim">2021 - Todos os direitos reservados. &copy;</p>
     </footer>

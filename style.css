@@ -1,73 +1,146 @@
-html,body{
-    height: 100%;
-    padding:0px; 
-    margin:0px;
-}
- body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-image:url(https://i.pinimg.com/originals/87/3f/71/873f71c1f893a0aafad8695324fedfc9.gif);
-    background-repeat: repeat;
-    background-size: 100%;
- }
- header{
-    height: 15%;
-    background-color:black;
-    position:fixed;
-    top:0px;
-    right:0px;
-    left:0px;
-  }
-  .cabecalho{
-      display: flex;
-      justify-content:space-between;
-      align-items: center;
-  }
-  .nasa-logo{
-    margin-right:3% ;
-  }
-  a{
-    background-color: rgb(233, 44, 44);
-    padding-bottom: 5px;
-    padding-left: 2px;
-    padding-top: 5px;
-    padding-right: 2px;
-    margin-right: 20px;
-    text-decoration:none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-    color:rgb(0, 0, 0);
-    border-radius: 2px;
-  }
-footer{
-    display:flex;
-   justify-content: center;
-    margin-top: 400px;
-    padding:20px;
-    width: 100%;
-    background-color:black;
-    color:rgb(253, 38, 0);
-    text-align:center;  
-    position:fixed;
-    bottom: 0px;
- }
- .fim{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    
- }
-
- #buscarImg{
+body {
   display: flex;
-  justify-content:space-around;
-  margin-left: 30%;
-  margin-right: 40%;
-  margin-bottom: 30%;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+  overflow-x:hidden;
+  background-image: url(https://i.pinimg.com/originals/87/3f/71/873f71c1f893a0aafad8695324fedfc9.gif);
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+header {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.671);
+  opacity: 0.8;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
   
- }
-  /* Estilização do pagapod.html (cont1/cont2)*/
-.cont1{
+}
+
+.nasa-logo {
+  margin-right: 3%;
+}
+
+a {
+  background-color: rgb(233, 44, 44);
+  opacity: 1.0;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-right: 2px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  border-radius: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  padding: 20px;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.671);
+  
+  
+}
+
+.fim {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  color: rgb(253, 38, 0);
+  
+}
+/*conteudo pag principal*/
+#areaImg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap-reverse;
+  justify-content:center;
+  align-items: center;
+  justify-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 30px;
+  
+  
+}
+.paragrafo{
+  color:white;
+  font-size: 18px;
+  font-style: italic;
+  background-color: rgba(255, 15, 15, 0.685);
+  padding-left: 15px;
+}
+#calendario{
+  
+  width:150px;
+  border-color: rgb(93, 124, 216);
+  border-style:outset;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 17px;
+  background-color:rgb(17, 58, 105);
+  color:white;
+}
+.busca{
+  margin-left: 5%;
+ 
+}
+
+#foto {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  padding-left: 160px;
+  padding-right: 160px;
+  
+}
+#texto{
+  
+  text-align: center;
+  font-size: 18px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgba(12, 7, 7, 0.479);
+  color:white;
+  padding: 2px;
+  border-radius: 5px;
+}
+#titulo{
+  text-align: center;
+  font-size: 25px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  background-color: rgb(14, 119, 240);
+}
+
+button{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border-radius: 5px; 
+  border-style:solid;
+  width: 70px;
+ color:white;
+  background-color: rgba(0, 0, 0, 0.671);
+  margin-top: 2px;
+  
+}
+/* Estilização do pagapod.html (cont1/cont2)*/
+.cont1 {
   background-color: rgb(162, 163, 163);
   padding-left: 10px;
   padding-right: 10px;
@@ -77,15 +150,16 @@ footer{
   margin-right: 20%;
   margin-top: 50px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-style: ridge;
-  border-color:rgb(63, 212, 212);
+  border-color: rgb(63, 212, 212);
   border-radius: 5px;
 }
 
-.cont2{
-  background-color:rgb(0, 183, 255) ;
-  margin-top:5%;
+.cont2 {
+  background-color: rgb(0, 183, 255);
+  margin-top: 5%;
   margin-left: 10px;
   margin-right: 70%;
   margin-bottom: 20px;
@@ -94,10 +168,549 @@ footer{
   padding-right: 10px;
   padding-bottom: 10px;
   border-radius: 30px;
-  border-style:inset;
-  border-color:rgb(6, 155, 255) ;
+  border-style: inset;
+  border-color: rgb(6, 155, 255);
   text-align: center;
-  font-family:monospace;
+  font-family: monospace;
   font-size: 15px;
 }
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    overflow-x:hidden;
+    background-image: url(https://i.pinimg.com/originals/87/3f/71/873f71c1f893a0aafad8695324fedfc9.gif);
+    background-repeat: repeat;
+    background-size: 100%;
+  }
   
+  header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.671);
+    opacity: 0.8;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    
+  }
+
+  
+  a {
+    background-color: rgb(233, 44, 44);
+    opacity: 1.0;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-right: 2px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    padding: 20px;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.671);
+    
+    
+  }
+  
+  .fim {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    color: rgb(253, 38, 0);
+    
+  }
+  /*conteudo pag principal*/
+  #areaImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 30px;
+    
+    
+  }
+  .paragrafo{
+    color:white;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgba(255, 15, 15, 0.685);
+    padding-left: 15px;
+  }
+  #calendario{
+    
+    width:150px;
+    border-color: rgb(93, 124, 216);
+    border-style:outset;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+    background-color:rgb(17, 58, 105);
+    color:white;
+  }
+  .busca{
+    margin-left: 5%;
+   
+  }
+  
+  #foto {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+    padding-left: 160px;
+    padding-right: 160px;
+    
+  }
+  #texto{
+    
+    text-align: center;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(12, 7, 7, 0.479);
+    color:white;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  #titulo{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(14, 119, 240);
+  }
+  
+  button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 5px; 
+    border-style:solid;
+    width: 70px;
+   color:white;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 2px;
+    
+  }
+  /* Estilização do pagapod.html (cont1/cont2)*/
+  .cont1 {
+    background-color: rgb(162, 163, 163);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-style: ridge;
+    border-color: rgb(63, 212, 212);
+    border-radius: 5px;
+  }
+  
+  .cont2 {
+    background-color: rgb(0, 183, 255);
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 70%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border-style: inset;
+    border-color: rgb(6, 155, 255);
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width:600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    overflow-x:hidden;
+    background-image: url(https://i.pinimg.com/originals/87/3f/71/873f71c1f893a0aafad8695324fedfc9.gif);
+    background-repeat: repeat;
+    background-size: 100%;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    opacity: 0.8;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    
+  }
+
+  
+  a {
+    background-color: rgb(233, 44, 44);
+    opacity: 1.0;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-right: 2px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    padding: 20px;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.671);
+    
+    
+  }
+  
+  .fim {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    color: rgb(253, 38, 0);
+    
+  }
+  /*conteudo pag principal*/
+  #areaImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    
+    
+    margin-top: 30px;
+    
+    
+  }
+  .paragrafo{
+    color:white;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgba(255, 15, 15, 0.685);
+    padding-left: 15px;
+  }
+  #calendario{
+    
+    width:150px;
+    border-color: rgb(93, 124, 216);
+    border-style:outset;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+    background-color:rgb(17, 58, 105);
+    color:white;
+  }
+  .busca{
+    margin-left: 5%;
+   
+  }
+  
+  #foto {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    max-height: 300px;
+    margin-left: 32%;
+    
+  }
+  #texto{
+    
+    text-align: center;
+    font-size: 15px;
+    text-size-adjust:15px;
+    text-overflow: ellipsis;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(12, 7, 7, 0.479);
+    color:white;
+    padding:2%;
+    border-radius: 5px;
+    margin-left: 60%;
+    margin-right: 0%;
+    
+  }
+  #titulo{
+    padding:3px;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(14, 119, 240);
+    margin-left: 60%;
+  }
+  
+  button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 5px; 
+    border-style:solid;
+    width: 70px;
+   color:white;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 2px;
+    
+  }
+  /* Estilização do pagapod.html (cont1/cont2)*/
+  .cont1 {
+    background-color: rgb(162, 163, 163);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-style: ridge;
+    border-color: rgb(63, 212, 212);
+    border-radius: 5px;
+  }
+  
+  .cont2 {
+    background-color: rgb(0, 183, 255);
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 70%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border-style: inset;
+    border-color: rgb(6, 155, 255);
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+  }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    overflow-x:hidden;
+    background-image: url(https://i.pinimg.com/originals/87/3f/71/873f71c1f893a0aafad8695324fedfc9.gif);
+    background-repeat: repeat;
+    background-size: 100%;
+  }
+  
+  header {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    opacity: 0.8;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    
+  }
+  
+ 
+  
+  a {
+    background-color: rgb(233, 44, 44);
+    opacity: 1.0;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-top: 5px;
+    padding-right: 2px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    padding: 20px;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.671);
+    
+    
+  }
+  
+  .fim {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    color: rgb(253, 38, 0);
+    
+  }
+  /*conteudo pag principal*/
+  #areaImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap-reverse;
+    justify-content:center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 30%;
+    margin-right: 80px;
+    margin-top: 30px;
+    
+    
+  }
+  .paragrafo{
+    color:white;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgba(255, 15, 15, 0.685);
+    padding-left: 15px;
+  }
+  #calendario{
+    
+    width:150px;
+    border-color: rgb(93, 124, 216);
+    border-style:outset;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+    background-color:rgb(17, 58, 105);
+    color:white;
+  }
+  .busca{
+    margin-left: 5%;
+   
+  }
+  
+  #foto {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    max-height: 250px;
+    margin-left: 20%;
+    
+  }
+  #texto{
+    
+    text-align: center;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(12, 7, 7, 0.479);
+    color:white;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  #titulo{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(14, 119, 240);
+  }
+  
+  button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 5px; 
+    border-style:solid;
+    width: 70px;
+   color:white;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 2px;
+    
+  }
+  /* Estilização do pagapod.html (cont1/cont2)*/
+  .cont1 {
+    background-color: rgb(162, 163, 163);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-style: ridge;
+    border-color: rgb(63, 212, 212);
+    border-radius: 5px;
+  }
+  
+  .cont2 {
+    background-color: rgb(0, 183, 255);
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 70%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    border-style: inset;
+    border-color: rgb(6, 155, 255);
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+  }
+}
+
+}

@@ -14,13 +14,14 @@ function gerarImg(imagem){
     titulo.innerText = imagem.title;
     let texto = document.getElementById("texto");
     texto.innerText = imagem.explanation;
+    
 }
 
 $(document).ready(function () {
   $("button").click(function () {
-      $.get("https://api.nasa.gov/planetary/apod?api_key=u5bzacOGURguFitnDhbPdnP41zGjKY0GSX2X7wQy", { date: calendario.value }, function (data) {
-        gerarImg(data);
-      });
+    $.get("https://api.nasa.gov/planetary/apod?api_key=u5bzacOGURguFitnDhbPdnP41zGjKY0GSX2X7wQy", { date: calendario.value}, function (data) {
+      gerarImg(data);
+    });
   });
 });
 
